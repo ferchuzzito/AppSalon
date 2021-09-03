@@ -1,0 +1,45 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $Fuente_principal;
+    font-size: 1.6rem;
+}
+
+p {
+    color: $Cblanco;
+    font-size: 2rem;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+@for $i from 1 through 3 {
+    h#{$i} {
+        font-family: $Fuente_principal;
+        margin: 0 0 $Separacion / 2 0;
+        font-weight: 900;
+        color: $Cazul;
+        text-align: center;
+        font-size: nth($Heading-size, $i);
+    }
+}
